@@ -7,7 +7,10 @@ public class GitesFeladat {
 
     public static void main(String[] args) {
         osszegzesTetele();
-
+        int i = 0;
+        while(i<10){
+            i++;
+        }
     }
 
     private static void osszegzesTetele() {
