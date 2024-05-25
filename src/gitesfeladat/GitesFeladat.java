@@ -7,6 +7,7 @@ public class GitesFeladat {
 
     public static void main(String[] args) {
         osszegzesTetele();
+
     }
 
     private static void osszegzesTetele() {
@@ -16,6 +17,9 @@ public class GitesFeladat {
             osszeg += tomb[i];
         }
         System.out.println("tomb elemeinek osszege: " + osszeg);
+        for (int i = 0; i < 10; i++) {
+            System.out.println(i + "");
+        }
     }
     
 }
