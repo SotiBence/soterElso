@@ -15,6 +15,7 @@ public class GitesFeladat {
         for (int i = 0; i < tomb.length; i++) {
             osszeg += tomb[i];
         }
+        System.out.println("tomb elemeinek osszege: " + osszeg);
     }
     
 }
