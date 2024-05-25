@@ -8,6 +8,8 @@ public class GitesFeladat {
     public static void main(String[] args) {
         osszegzesTetele();
         megszamlalasTetele();
+        maximumKivalasztas();
+        minimumKivalasztas();
         int i = 0;
         while(i<10){
             i++;
@@ -35,6 +37,28 @@ public class GitesFeladat {
             }
         }
             System.out.println("parosak: " + db);
+    }
+
+    private static void maximumKivalasztas() {
+        int[] tomb = {3, 5, 9, 7};
+        int maxIndex = 0;
+        for (int i = 1; i < tomb.length; i++) {
+            if (tomb[i] > tomb[maxIndex]) {
+                maxIndex = i;
+            }
+        }
+            System.out.println("a legnagyobb elem: " + tomb[maxIndex]);
+    }
+
+    private static void minimumKivalasztas() {
+        int[] tomb = {3, 1, 9, 7};
+        int minIndex = 0;
+        for (int i = 1; i < tomb.length; i++) {
+            if (tomb[i] < tomb[minIndex]) {
+                minIndex = i;
+            }
+        }
+        System.out.println("a legkissebb elem: " + tomb[minIndex]);
     }
     
 }
